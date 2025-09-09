@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+#contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#contact h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #4cafef;
+}
+
+/* List layout */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.contact-list a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, color 0.3s;
+}
+
+.contact-list a:hover {
+  transform: translateX(5px);
+  color: #4cafef;
+}
