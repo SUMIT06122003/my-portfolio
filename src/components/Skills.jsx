@@ -1,5 +1,16 @@
 import React from "react";
 
+// Importing all logos from assets folder
+import reactLogo from "../assets/react.png";
+import mongoLogo from "../assets/mongodb.png";
+import expressLogo from "../assets/express.png";
+import nodeLogo from "../assets/node.png";
+import firebaseLogo from "../assets/firebase.png";
+import capacitorLogo from "../assets/capacitor.png";
+import apiLogo from "../assets/API.webp";
+import gitLogo from "../assets/git.png";
+import githubLogo from "../assets/github.png";
+
 export default function Skills() {
   const sectionStyle = {
     textAlign: "center",
@@ -39,15 +50,15 @@ export default function Skills() {
   };
 
   const skills = [
-    { name: "React", logo: "/assets/react.png" },
-    { name: "MongoDB", logo: "/logos/mongodb.png" },
-    { name: "Express", logo: "/logos/express.png" },
-    { name: "Node.js", logo: "/logos/node.png" },
-    { name: "Firebase", logo: "/logos/firebase.png" },
-    { name: "Capacitor", logo: "/logos/capacitor.png" },
-    { name: "API", logo: "/logos/api.png" },
-    { name: "Git", logo: "/logos/git.png" },
-    { name: "GitHub", logo: "/logos/github.png" },
+    { name: "React", logo: reactLogo },
+    { name: "MongoDB", logo: mongoLogo },
+    { name: "Express", logo: expressLogo },
+    { name: "Node.js", logo: nodeLogo },
+    { name: "Firebase", logo: firebaseLogo },
+    { name: "Capacitor", logo: capacitorLogo },
+    { name: "API", logo: apiLogo },
+    { name: "Git", logo: gitLogo },
+    { name: "GitHub", logo: githubLogo },
   ];
 
   return (
