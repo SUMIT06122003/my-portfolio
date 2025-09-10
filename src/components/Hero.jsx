@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Profile from "../assets/profile.jpg";
+import Resume from "../assets/Sumit_Singh_Resume.pdf"; // ✅ Place your resume in assets
 
 const texts = ["Frontend", "Backend", "Fullstack Using MERN"];
 
@@ -46,7 +47,13 @@ export default function Hero() {
       {/* Left Side - Text */}
       <div style={{ flex: 1, minWidth: "280px" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>Who I Am</h2>
-        <p style={{ fontSize: "18px", lineHeight: "1.6", marginBottom: "20px" }}>
+        <p
+          style={{
+            fontSize: "18px",
+            lineHeight: "1.6",
+            marginBottom: "20px",
+          }}
+        >
           Hello 👋 I’m <strong>Sumit Singh</strong>, a passionate{" "}
           <span style={{ color: "#4cafef", fontWeight: "bold" }}>{text}</span>{" "}
           developer.  
@@ -55,6 +62,45 @@ export default function Hero() {
           I also work with Firebase, Capacitor, REST APIs, and Git/GitHub for
           efficient development and deployment.
         </p>
+
+        {/* ✅ Buttons */}
+        <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
+          <a
+            href={Resume}
+            download="Sumit_Singh_Resume.pdf"
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "#4cafef",
+              color: "white",
+              textDecoration: "none",
+              borderRadius: "8px",
+              fontWeight: "bold",
+              transition: "0.3s",
+            }}
+            onMouseEnter={(e) => (e.target.style.backgroundColor = "#3797d9")}
+            onMouseLeave={(e) => (e.target.style.backgroundColor = "#4cafef")}
+          >
+            📄 Download Resume
+          </a>
+
+          <a
+            href="#contact"
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "#222",
+              color: "#4cafef",
+              textDecoration: "none",
+              borderRadius: "8px",
+              fontWeight: "bold",
+              border: "2px solid #4cafef",
+              transition: "0.3s",
+            }}
+            onMouseEnter={(e) => (e.target.style.backgroundColor = "#333")}
+            onMouseLeave={(e) => (e.target.style.backgroundColor = "#222")}
+          >
+            🤝 Hire Me
+          </a>
+        </div>
       </div>
 
       {/* Right Side - Profile Image */}
@@ -68,6 +114,7 @@ export default function Hero() {
             height: "200px",
             objectFit: "cover",
             border: "4px solid #4cafef",
+            boxShadow: "0px 4px 15px rgba(0,0,0,0.3)",
           }}
         />
       </div>
